@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 describe('Timer', () => {
     it('show 10 sec',() => {
       cy.visit('/')
