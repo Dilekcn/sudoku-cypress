@@ -45,6 +45,10 @@ export const Game: React.FC<{}> = () => {
   function _createNewGame(e?: React.ChangeEvent<HTMLSelectElement>) {
     let [ temporaryInitArray, temporarySolvedArray ] = getUniqueSudoku(difficulty, e);
 
+    console.log(temporarySolvedArray)
+    console.log(temporaryInitArray)
+    
+
     setInitArray(temporaryInitArray);
     setGameArray(temporaryInitArray);
     setSolvedArray(temporarySolvedArray);
